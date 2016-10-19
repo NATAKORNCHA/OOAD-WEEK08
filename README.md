@@ -5,11 +5,41 @@
 * ภาพที่ 1 การรับโทรศัพท์ที่มีสายเรียกซ้อน
 
 
+code 
+
+'''
+@startuml
+
+left to right direction
+ratee .Left. (Answer the phone) 
+(Call Waiting) ..> (Answer the phone) : extends
+
+@enduml
+'''
+
+diagram
+
 ![](http://www.plantuml.com/plantuml/img/RSkn3O0W40NG_gRu9HGm08N1E0c95o61qy0P75y7i7hLYqDJrxjL8ZAhZCaTcXbNFeKjdFC8FIbp89WjrOgPYXOvBFo2dn70ZxBiWq3nysul)
 
 
 
 * ภาพที่ 2 อธิบายการตรวจสอบ user ที่เข้ามาในระบบคอมพิวเตอร์
+
+
+code 
+
+'''
+@startuml
+
+
+Administrator -- (Validate Users ) 
+(Check Password) <-- (Validate Users ) : users
+
+@enduml
+'''
+
+diagram
+
 
 ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuT8eIyp9J4aiILK8BKujAjPKqDLLi0gkB2v9pLLmJCdDpCiiBYbABCalik9Im5Hhfw3Xd96QdAqGa5XSN9vVbAAfOALGMfnQpEMGcfS2D1y0)
 
